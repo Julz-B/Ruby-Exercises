@@ -1,5 +1,4 @@
 # bubble_sort.rb
-require 'pry-byebug'
 
 def bubble_sort(array)
   sorted_array = array
@@ -8,7 +7,6 @@ def bubble_sort(array)
   idx2 = idx + 1
   temp_holder = 0
   sorted = 0
-  # binding.pry
   arr_total.times do 
     if sorted_array[idx] > sorted_array[idx2]
       temp_holder = sorted_array[idx2]
@@ -19,7 +17,6 @@ def bubble_sort(array)
     idx += 1
     idx2 += 1
   end
-  # binding.pry
   if sorted > 0
     bubble_sort(sorted_array)
   end
